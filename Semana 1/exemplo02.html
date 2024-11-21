@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro AR - exemplo 2</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/3.4.5/three.js/build/ar-threex-location-only.js'></script>
+    <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/3.4.5/aframe/build/aframe-ar.js'></script>
+</head>
+
+<body style="margin:0px; overflow: hidden;" arjs="debugUIEnabled:false">
+
+    <a-scene vr-mode-ui="enabled: false">
+        <a-assests> <!--É um container para armazenar recursos como imagens, modelos 3D, vídeos e sons.-->
+            <img id="cb" src="./Crash Bandicoot.jpg">
+        </a-assests>
+
+        <a-marker present="hiro"> <!--É um marcador que o AR.js reconhece para posicionar objetos 3D no espaço. Neste caso, pega o ID do objeto já declarado-->
+            <a-image width="1" height="1" rotation="-90 0 0" position="0 0 0" src="#cb"></a-image>
+        </a-marker>
+
+        <a-entity camera="">
+
+        </a-entity>
+    </a-scene>
+</body>
+</html>

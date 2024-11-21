@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro AR</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script> <!--Biblioteca para criar experiências VR e AR em HTML. Facilita a construção de objetos 3D, câmeras, luzes e interações.-->
+    <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/3.4.5/three.js/build/ar-threex-location-only.js'></script> <!-- Parte do AR.js para trabalhar com localização baseada em GPS.-->
+    <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/3.4.5/aframe/build/aframe-ar.js'></script> <!--  Extensão do AR.js para integrar funcionalidades de AR ao A-Frame, como detecção de marcadores (por exemplo, padrões Hiro).-->
+</head>
+
+<body style="margin:0px; overflow: hidden;" arjs="debugUIEnabled:false"> <!--Desabilita a interface de depuração do AR.js (normalmente exibe informações sobre o status do AR, como FPS e a câmera).-->
+
+    <a-scene vr-mode-ui="enabled: false"> <!--É a cena principal do A-Frame, Desabilita o botão de alternar para VR (não necessário para AR).-->>
+        <a-marker present="hiro">
+            <!--<a-box color="#ff0e0e0e"></a-box>-->
+            <a-sphere color="blue" position="0 1.25 -3" radius="1.25"></a-sphere>
+        </a-marker>
+
+        <a-entity camera=""> <!--Define a posição da câmera no espaço 3D. Neste caso, é uma câmera padrão sem modificações.-->
+        </a-entity>
+    </a-scene>
+
+</body>
+</html>

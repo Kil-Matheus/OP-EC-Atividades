@@ -1,0 +1,11 @@
+Model Information:
+* title:	N64 Paper Mario
+* source:	https://sketchfab.com/3d-models/n64-paper-mario-6555ce5c53fb4e1d97ab776b22b3b9d6
+* author:	Dreamcasterguy (https://sketchfab.com/Dreamcasterguy)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "N64 Paper Mario" (https://sketchfab.com/3d-models/n64-paper-mario-6555ce5c53fb4e1d97ab776b22b3b9d6) by Dreamcasterguy (https://sketchfab.com/Dreamcasterguy) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

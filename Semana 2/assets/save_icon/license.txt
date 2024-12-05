@@ -1,0 +1,11 @@
+Model Information:
+* title:	Save Icon
+* source:	https://sketchfab.com/3d-models/save-icon-c80e9eef5cce420ea92e608465e7ebfe
+* author:	The Olivia (https://sketchfab.com/yusufenesalp387)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Save Icon" (https://sketchfab.com/3d-models/save-icon-c80e9eef5cce420ea92e608465e7ebfe) by The Olivia (https://sketchfab.com/yusufenesalp387) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

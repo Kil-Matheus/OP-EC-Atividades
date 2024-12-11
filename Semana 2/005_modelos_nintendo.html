@@ -1,92 +1,76 @@
 <html>
-    <head>
-      <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
-      <script src="index.js"></script>
-    </head>
-    <body>
-      <a-scene>
-          <!-- Gerenciamento de Assets do A-Frame -->
-           <a-assets>
-              <!-- Fundo e assets-->
-              <img id="fundo" src="./texturas/pexels-francesco-ungaro-281260.jpg" />
-              <img id="chao" src="./texturas/Texturelabs_Brick_123XL.jpg"/>
-              <img id="procurado" src="./assets/perfil.png" />
-              <a-asset-item id="taberna" src="./assets/medieval_taverna/scene.gltf"></a-asset-item>
-              <a-asset-item id="cartaz" src="./assets/wanted_poster/scene.gltf"></a-asset-item>
-              <a-assets id="mario" src="./assets/n64_paper_mario/scene.gltf"></a-assets>
-              <a-assets id="star" src="./assets/super_mario_64_star/scene.gltf"></a-assets>
-              <a-assets id="nintendo-64" src="./assets/nintendo_64/scene.gltf"></a-assets>
-              <a-assets id="tv-sony" src="./assets/tv-sony/scene.gltf"></a-assets>
 
+<head>
+  <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+</head>
 
-           </a-assets>
+<body>
+  <a-scene>
+    <!-- Gerenciamento de Assets do A-Frame -->
+    <a-assets>
+      <!-- Fundo e assets -->
+      <img id="fundo" src="./texturas/pexels-francesco-ungaro-281260.jpg" />
+      <img id="chao" src="./texturas/Texturelabs_Brick_123XL.jpg" />
+      <img id="procurado" src="./assets/perfil.png" />
+      <a-asset-item id="taberna" src="./assets/medieval_taverna/scene.gltf"></a-asset-item>
+      <a-asset-item id="cartaz" src="./assets/wanted_poster/scene.gltf"></a-asset-item>
+      <a-asset-item id="mario" src="./assets/n64_paper_mario/scene.gltf"></a-asset-item>
+      <a-asset-item id="star-model" src="./assets/super_mario_64_star/scene.gltf"></a-asset-item>
+      <a-asset-item id="nintendo-64" src="./assets/nintendo_64/scene.gltf"></a-asset-item>
+      <a-asset-item id="tv-sony" src="./assets/tv-sony/scene.gltf"></a-asset-item>
+      <audio id="mario-star" src="assets/Super Mario Bros - Star [ ezmp3.cc ].mp3"></audio>
+    </a-assets>
 
-         <a-sky src="#fundo"></a-sky>
+    <a-sky src="#fundo"></a-sky>
 
-         <a-plane
-                material="src:#chao"
-                rotation="-90 0 0"
-                repeat="5 5"
-                scale="10 10 1">
-          </a-plane>
+    <a-plane material="src:#chao" rotation="-90 0 0" repeat="5 5" scale="10 10 1"></a-plane>
 
-        <a-entity 
-        geometry="primitive: plane; height: 2; width: 2"
-        material="src: #procurado"
-        scale="0.2 0.2 0.2"
-        position="2 0.85 2.69"
-        rotation="0 180 0"
-        ></a-entity>
+    <a-entity geometry="primitive: plane; height: 2; width: 2" material="src: #procurado" scale="0.2 0.2 0.2"
+      position="2 0.85 2.69" rotation="0 180 0"></a-entity>
 
-        <a-entity 
-        gltf-model="#cartaz"
-        scale="0.045 0.045 0.045"
-        position="2 0.7 2.70"
-        rotation="0 90 0"
-        ></a-entity>
-          
-         <a-entity 
-         gltf-model="#taberna"
-         scale="0.8 0.8 0.8"
-         position="0 0 0"
-         rotation="0 90 0"
-         ></a-entity>
+    <a-entity gltf-model="#cartaz" scale="0.045 0.045 0.045" position="2 0.7 2.70" rotation="0 90 0"></a-entity>
 
-         <a-entity 
-         gltf-model="#mario"
-         scale="0.9 0.9 0.9"
-         position="1 0 1"
-         rotation="0 45 0"
-         ></a-entity>
+    <a-entity gltf-model="#taberna" scale="0.8 0.8 0.8" position="0 0 0" rotation="0 90 0"></a-entity>
 
-        <a-entity
-        gltf-model="#star"
-        scale="0.3 0.3 0.3"
-        position="-1.5 0.6 -1.2"
-        animation="property: rotation;
-        to: 0 360 0;
-        loop: true;
-        duration: 5000">
-        </a-entity>
+    <a-entity gltf-model="#mario" scale="0.9 0.9 0.9" position="1 0 1" rotation="0 45 0"></a-entity>
 
-        <a-entity
-        gltf-model="#nintendo-64"
-        scale="0.6 0.6 0.6"
-        position="1.1 0.5 -2.3"
-        rotation="0 90 0">
-        </a-entity>
+    <!-- Entidade Star -->
+    <a-entity id="star" gltf-model="#star-model" scale="0.3 0.3 0.3" position="-1.5 0.6 -1.2" 
+      animation="property: position; to: -1.5 0.8 -1.2; dir: alternate; loop: true; dur: 1000">
+    </a-entity>
 
-        <a-entity
-        gltf-model="#tv-sony"
-        scale="2 2 2"
-        position="0.5 0.6 -1.8"
-        rotation="0 0 0">
-        </a-entity>
+    <a-entity gltf-model="#nintendo-64" scale="0.6 0.6 0.6" position="1.1 0.5 -2.3" rotation="0 90 0"></a-entity>
 
-        <a-entity position="6 0 0" rotation="0 90 0">
-        <a-camera></a-camera>
-        </a-entity>
+    <a-entity gltf-model="#tv-sony" scale="2 2 2" position="0.5 0.6 -1.8" rotation="0 0 0"></a-entity>
 
-      </a-scene>
-    </body>
-  </html>
+    <a-entity position="6 0 0" rotation="0 90 0">
+      <a-camera>
+        <a-cursor intersection-spawn="Event: click; mixin:voxel;"></a-cursor>
+      </a-camera>
+    </a-entity>
+  </a-scene>
+
+  <script>
+    const music = document.querySelector("#mario-star");
+    const star = document.querySelector("#star");
+
+    // Evento para adicionar rotação e tocar música
+    star.addEventListener("mouseenter", (e) => {
+      // Adiciona uma nova animação de rotação
+      star.setAttribute("animation__rotate", "property: rotation; to: 0 360 0; loop: true; dur: 1000");
+      // Toca a música
+      music.play();
+    });
+
+    // Para a música ao sair da estrela
+    star.addEventListener("mouseleave", (e) => {
+      // Remove a rotação adicional
+      star.removeAttribute("animation__rotate");
+      // Pausa a música
+      music.pause();
+      music.currentTime = 0; // Reinicia a música
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Floppy Disk
+* source:	https://sketchfab.com/3d-models/floppy-disk-fd240e4466b545c4bb9995630aa7f31b
+* author:	p1xfx (https://sketchfab.com/p1xfx)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Floppy Disk" (https://sketchfab.com/3d-models/floppy-disk-fd240e4466b545c4bb9995630aa7f31b) by p1xfx (https://sketchfab.com/p1xfx) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

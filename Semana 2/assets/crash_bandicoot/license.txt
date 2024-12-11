@@ -1,0 +1,11 @@
+Model Information:
+* title:	Crash bandicoot
+* source:	https://sketchfab.com/3d-models/crash-bandicoot-442556bf988345afbbdc1f398c169a30
+* author:	MatiasH290 (https://sketchfab.com/matias029)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Crash bandicoot" (https://sketchfab.com/3d-models/crash-bandicoot-442556bf988345afbbdc1f398c169a30) by MatiasH290 (https://sketchfab.com/matias029) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
